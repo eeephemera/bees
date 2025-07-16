@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Typography, IconButton, Button } from "@material-tailwind/react";
+import { Typography, IconButton } from "@mui/material";
 
 const CURRENT_YEAR = new Date().getFullYear();
 
@@ -12,53 +12,41 @@ export function Footer() {
           <div className="text-center md:text-left">
             <Typography
               variant="h5"
-              color="white"
-              className="mb-4"
-              placeholder={undefined}
-              onResize={undefined}
-              onResizeCapture={undefined}
-              onPointerEnterCapture={undefined}
-              onPointerLeaveCapture={undefined}
+              sx={{ color: 'white', marginBottom: 4 }}
             >
               Шмелиная Ферма
             </Typography>
-            <Typography color="white" className="mb-12 font-normal" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Typography sx={{ color: 'white', marginBottom: 12, fontWeight: 400 }}>
               Ваш надежный партнер в опылении!
             </Typography>
           </div>
           <div className="text-center md:text-right">
-            <Typography variant="h5" color="white" className="mb-4" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Typography variant="h5" sx={{ color: 'white', marginBottom: 4 }}>
               Контакты
             </Typography>
-            <Typography color="white" className="mb-2 font-normal" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Typography sx={{ color: 'white', marginBottom: 2, fontWeight: 400 }}>
               Телефон: +7 (XXX) XXX-XX-XX
             </Typography>
-            <Typography color="white" className="mb-12 font-normal" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Typography sx={{ color: 'white', marginBottom: 12, fontWeight: 400 }}>
               Email: info@bumblebeefarm.ru
             </Typography>
           </div>
         </div>
         <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between">
           <Typography
-            color="white"
-            className="text-center font-normal opacity-75"
-            placeholder={undefined}
-            onResize={undefined}
-            onResizeCapture={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            sx={{ color: 'white', textAlign: 'center', fontWeight: 400, opacity: 0.75 }}
           >
             &copy; {CURRENT_YEAR} Шмелиная Ферма. Все права защищены.
           </Typography>
 
           <div className="flex gap-2">
             <a href="https://t.me/yourtelegram" target="_blank">
-              <IconButton variant="text" color="white" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+              <IconButton sx={{ color: 'white' }}>
                 <i className="fa-brands fa-telegram text-2xl not-italic opacity-75"></i>
               </IconButton>
             </a>
             <a href="https://instagram.com/yourinstagram" target="_blank">
-              <IconButton variant="text" color="white" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+              <IconButton sx={{ color: 'white' }}>
                 <i className="fa-brands fa-instagram text-2xl not-italic opacity-75"></i>
               </IconButton>
             </a>

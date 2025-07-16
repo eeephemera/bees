@@ -1,20 +1,16 @@
 "use client";
 
 import React from "react";
-import { Typography } from "@material-tailwind/react";
+import { Typography } from "@mui/material";
 
 import {
-  CursorArrowRaysIcon,
-  HeartIcon,
-  LightBulbIcon,
-  LockClosedIcon,
-  TruckIcon, // For ease of transport
-  AdjustmentsHorizontalIcon, // For ease of control
-  SunIcon, // For less demanding/weather resistance
-  SparklesIcon, // For best pollinators
-  ChartBarIcon, // For increased yield
-  CurrencyDollarIcon // For economic benefit
-} from "@heroicons/react/24/solid";
+  LocalShipping as TruckIcon,
+  Tune as AdjustmentsHorizontalIcon,
+  WbSunny as SunIcon,
+  Stars as SparklesIcon,
+  BarChart as ChartBarIcon,
+  AttachMoney as CurrencyDollarIcon
+} from "@mui/icons-material";
 
 import FeatureCard from "../components/feature-card";
 
@@ -61,20 +57,15 @@ export function Features() {
   return (
     <section className="py-28 px-4">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <Typography sx={{ color: 'text.secondary', marginBottom: 2, fontWeight: 700, textTransform: 'uppercase' }}>
           Почему Выбирают Шмелей?
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4 text-2xl sm:text-4xl md:text-5xl" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+        <Typography variant="h3" color="text.primary" sx={{ marginBottom: 4, fontSize: { xs: '1.5rem', sm: '2.25rem', md: '3rem' } }}>
           Преимущества Опыления Шмелями
         </Typography>
         <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
-          placeholder={undefined}
-          onResize={undefined}
-          onResizeCapture={undefined}
-          onPointerEnterCapture={undefined}
-          onPointerLeaveCapture={undefined}
+          variant="body1"
+          sx={{ marginX: 'auto', width: { xs: '100%', lg: '91.666667%' }, paddingX: { xs: 4, lg: 8 }, color: '#718096' }}
         >
           Шмели являются незаменимыми помощниками в современном сельском хозяйстве, обеспечивая высокую эффективность опыления и способствуя значительному увеличению урожайности. Узнайте о ключевых преимуществах использования шмелей для вашего бизнеса:
         </Typography>

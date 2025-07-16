@@ -2,8 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import { IconButton } from "@material-tailwind/react";
-import { PlayIcon } from "@heroicons/react/24/outline";
+import { IconButton } from "@mui/material";
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 
 export function VideoIntro() {
@@ -19,8 +19,8 @@ export function VideoIntro() {
           alt=""
         />
         <div className="absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 z-10">
-          <IconButton color="white" className="rounded-full" size="lg" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-            <PlayIcon className="h-6 w-6" />
+          <IconButton sx={{ color: 'white', borderRadius: '50%' }} size="large">
+            <PlayArrowIcon sx={{ height: 24, width: 24 }} />
           </IconButton>
         </div>
       </div>

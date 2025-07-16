@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Typography, Card, CardBody } from "@material-tailwind/react";
+import { Typography, Card, CardContent } from "@mui/material";
 
 interface InfoCardProps {
   title: string;
@@ -10,13 +10,13 @@ interface InfoCardProps {
 
 export function InfoCard({ title, children }: InfoCardProps) {
   return (
-    <Card color="transparent" shadow={false} placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-      <CardBody className="grid px-0" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-        <Typography variant="h2" color="blue-gray" className="mb-2" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+    <Card elevation={0} sx={{ backgroundColor: 'transparent' }}>
+      <CardContent sx={{ display: 'grid', paddingX: 0 }}>
+        <Typography variant="h4" color="text.primary" sx={{ marginBottom: 2 }}>
           {title}
         </Typography>
-        <Typography className=" font-normal" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>{children}</Typography>
-      </CardBody>
+        <Typography sx={{ fontWeight: 400 }}>{children}</Typography>
+      </CardContent>
     </Card>
   );
 }

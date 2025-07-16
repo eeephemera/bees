@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import InfoCard from "@/components/info-card";
-import { Typography, Card, CardBody } from "@material-tailwind/react";
+import { Typography } from "@mui/material";
 
 const OPTIONS = [
   {
@@ -36,17 +36,12 @@ export function MobileConvenience() {
           alt="greenhouse-photo"
         />
         <div className="col-span-1 mx-auto max-w-lg">
-          <Typography variant="h2" color="blue-gray" className="mb-4" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Typography variant="h4" color="text.primary" sx={{ marginBottom: 4 }}>
             Опыление Теплиц Шмелями
           </Typography>
           <Typography
-            variant="lead"
-            className="mb-5 text-left text-xl !text-gray-500"
-            placeholder={undefined}
-            onResize={undefined}
-            onResizeCapture={undefined}
-            onPointerEnterCapture={undefined}
-            onPointerLeaveCapture={undefined}
+            variant="body1"
+            sx={{ marginBottom: 5, textAlign: 'left', fontSize: '1.25rem', color: '#718096' }}
           >
             Использование шмелиных колоний для опыления в теплицах зависит от нескольких факторов, включая тип и размер теплицы, плотность посадок и виды растений.
           </Typography>

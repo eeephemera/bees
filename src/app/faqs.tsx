@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Typography, Card } from "@material-tailwind/react";
+import { Typography, Card, CardContent } from "@mui/material";
 
 const FAQS = [
   {
@@ -35,13 +35,12 @@ export function Faqs() {
     <section className="px-8 py-20">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+          <Typography variant="h3" color="text.primary" sx={{ marginBottom: 4 }}>
             Frequently asked questions
           </Typography>
           <Typography
-            variant="lead"
-            className="mx-auto mb-24 !text-gray-500 lg:w-3/5"
-            placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}
+            variant="body1"
+            sx={{ marginX: 'auto', marginBottom: 24, color: '#718096', width: { lg: '60%' } }}
           >
             A lot of people don&apos;t appreciate the moment until it&apos;s
             passed. I&apos;m not trying my hardest, and I&apos;m not trying to
@@ -51,15 +50,15 @@ export function Faqs() {
 
         <div className="grid gap-20 md:grid-cols-1 lg:grid-cols-3">
           {FAQS.map(({ title, desc }) => (
-            <Card key={title} shadow={false} color="transparent" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-              <Typography color="blue-gray" className="pb-6" variant="h4" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                {title}
-              </Typography>
-              <div className="pt-2">
-                <Typography className="font-normal !text-gray-500" placeholder={undefined} onResize={undefined} onResizeCapture={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+            <Card key={title} elevation={0} sx={{ backgroundColor: 'transparent' }}>
+              <CardContent sx={{ padding: 0 }}>
+                <Typography color="text.primary" sx={{ paddingBottom: 6 }} variant="h5">
+                  {title}
+                </Typography>
+                <Typography sx={{ fontWeight: 400, color: '#718096' }}>
                   {desc}
                 </Typography>
-              </div>
+              </CardContent>
             </Card>
           ))}
         </div>
