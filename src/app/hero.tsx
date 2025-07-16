@@ -12,7 +12,7 @@ function Hero() {
         className="grid !min-h-[49rem] bg-gray-900 bg-cover bg-center"
         style={{ backgroundImage: "url('/image/bees-background.jpg')" }}
       >
-        <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2">
+        <div className="container mx-auto mt-32 grid h-full w-full grid-cols-1 place-items-center lg:mt-14 lg:grid-cols-2 px-4 sm:px-6 lg:px-8">
           <div className="col-span-1">
             <Typography variant="h3" color="white" className="mb-4 text-xl sm:text-5xl md:text-6xl break-words">
               Высококачественные <br /> Колонии Шмелей для Опыления

@@ -27,7 +27,7 @@ const OPTIONS = [
 export function MobileConvenience() {
   return (
     <section className="py-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto items-center px-8 sm:px-12 lg:px-16">
         <Image
           width={500}
           height={500}

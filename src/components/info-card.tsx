@@ -10,12 +10,18 @@ interface InfoCardProps {
 
 export function InfoCard({ title, children }: InfoCardProps) {
   return (
-    <Card elevation={0} sx={{ backgroundColor: 'transparent' }}>
-      <CardContent sx={{ display: 'grid', paddingX: 0 }}>
-        <Typography variant="h4" color="text.primary" sx={{ marginBottom: 2 }}>
+    <Card sx={{
+      boxShadow: 3, // Добавляем тень
+      borderRadius: 2, // Скругляем углы
+      backgroundColor: 'white', // Явный белый фон
+      padding: 2, // Добавляем общий отступ внутри карточки
+      textAlign: 'center', // Выравниваем текст по центру всей карточки
+    }}>
+      <CardContent sx={{ display: 'grid', padding: 0 }}> {/* Сбрасываем padding, так как он уже на Card */}
+        <Typography variant="h4" color="text.primary" sx={{ marginBottom: 1.5 }}>
           {title}
         </Typography>
-        <Typography sx={{ fontWeight: 400 }}>{children}</Typography>
+        <Typography sx={{ fontWeight: 400, color: '#5a5a5a' }}>{children}</Typography>
       </CardContent>
     </Card>
   );

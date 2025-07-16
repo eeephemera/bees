@@ -7,7 +7,7 @@ const CURRENT_YEAR = new Date().getFullYear();
 export function Footer() {
   return (
     <footer className="mt-10 bg-gray-900 pt-12">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-center gap-8 md:justify-between">
           <div className="text-center md:text-left">
             <Typography
@@ -32,7 +32,7 @@ export function Footer() {
             </Typography>
           </div>
         </div>
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between">
+        <div className="mt-16 flex flex-wrap items-center justify-center gap-y-4 gap-x-8 border-t border-gray-700 py-7 md:justify-between px-4 md:px-8">
           <Typography
             sx={{ color: 'white', textAlign: 'center', fontWeight: 400, opacity: 0.75 }}
           >
