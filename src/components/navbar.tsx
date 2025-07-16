@@ -59,7 +59,7 @@ export function Navbar({ alwaysOpaque = false }: { alwaysOpaque?: boolean }) {
 
         <Box sx={{ display: { xs: "none", lg: "flex" }, alignItems: "center", gap: 3 }}>
           <ul style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
-            <NavItem href="/">Home</NavItem>
+            <NavItem href="/">Главная</NavItem>
             <NavItem href="/contact-us">Контакты</NavItem>
             <NavItem href="/catalog">Каталог Шмелей</NavItem>
           </ul>
@@ -92,7 +92,7 @@ export function Navbar({ alwaysOpaque = false }: { alwaysOpaque?: boolean }) {
       <Collapse in={open}>
         <Box sx={{ container: { xs: "none", md: "initial" }, marginTop: 4, borderRadius: "8px", borderTop: "1px solid #e0e0e0", backgroundColor: "white", paddingX: 2, paddingY: 2.5 }}>
           <ul style={{ display: "flex", flexDirection: "column", gap: "1rem", color: "#424242" }}>
-            <NavItem href="/">Home</NavItem>
+            <NavItem href="/">Главная</NavItem>
             <NavItem href="/contact-us">Контакты</NavItem>
             <NavItem href="/catalog">Каталог Шмелей</NavItem>
           </ul>
