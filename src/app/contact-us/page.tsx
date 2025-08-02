@@ -65,18 +65,18 @@ const Contact = () => {
   return (
     <>
       <Navbar alwaysOpaque={true} />
-      <section className="relative z-10 overflow-hidden bg-white py-20 dark:bg-dark lg:py-[120px]">
-        <div className="container mx-auto">
+      <section className="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px]">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
                 <span className="mb-4 block text-base font-semibold text-primary">
                   Свяжитесь с нами
                 </span>
-                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
+                <h2 className="mb-6 text-[32px] font-bold uppercase text-dark sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   ОСТАВАЙТЕСЬ НА СВЯЗИ
                 </h2>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
+                <p className="mb-12 text-base leading-relaxed text-body-color">
                   Мы всегда готовы ответить на ваши вопросы и помочь с выбором лучших решений для опыления. Заполните форму или свяжитесь с нами удобным для вас способом.
                 </p>
                 {/* Removed Address Section */}
@@ -112,10 +112,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
-                      Телефон
+                    <h4 className="mb-1 text-xl font-bold text-dark">
+                    Телефон
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color">
                       +7 (928) 528-85-98
                     </p>
                   </div>
@@ -137,10 +137,10 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="w-full">
-                    <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
+                    <h4 className="mb-1 text-xl font-bold text-dark">
                       Электронная почта
                     </h4>
-                    <p className="text-base text-body-color dark:text-dark-6">
+                    <p className="text-base text-body-color">
                       info@shmeleferma.com
                     </p>
                   </div>
@@ -159,7 +159,7 @@ const Contact = () => {
                     required
                   />
                   <ContactInputBox
-                    type="email"
+                        type="email"
                     name="email"
                     placeholder="Ваш Email"
                     value={formData.email}

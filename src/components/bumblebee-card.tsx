@@ -27,7 +27,7 @@ export function BumblebeeCard({
       borderRadius: 2, // Немного скруглим углы
     }}>
       <CardMedia component="img" height="224" image={image} alt={name} />
-      <CardContent>
+      <CardContent sx={{ padding: 3 }}> {/* Увеличиваем отступ */}
         <Typography variant="h5" color="text.primary" sx={{ marginBottom: 1.5 }}> {/* Уменьшаем отступ */}
           {name}
         </Typography>
@@ -38,7 +38,7 @@ export function BumblebeeCard({
         <Typography variant="h6" color="text.primary" sx={{ marginTop: 3, marginBottom: 1 }}>
           Преимущества {name.split(' - ')[0]}:
         </Typography>
-        <ul className="list-disc pl-5 text-gray-700 space-y-1" style={{ marginBottom: '1.5rem' }}>
+        <ul className="list-disc pl-5 text-gray-700 space-y-2" style={{ marginBottom: '1.5rem' }}>
           {advantages.map((item, index) => (
             <li key={index}><Typography variant="body2" sx={{ fontWeight: 400, color: '#4a5568' }}>{item}</Typography></li>
           ))}
@@ -47,7 +47,7 @@ export function BumblebeeCard({
         <Typography variant="h6" color="text.primary" sx={{ marginTop: 3, marginBottom: 1 }}>
           {name.split(' - ')[0]} опыляют:
         </Typography>
-        <ul className="list-disc pl-5 text-gray-700 grid grid-cols-2 gap-1" style={{ marginBottom: '1.5rem' }}>
+        <ul className="list-disc pl-5 text-gray-700 grid grid-cols-2 gap-2" style={{ marginBottom: '1.5rem' }}>
           {pollinates.map((item, index) => (
             <li key={index}><Typography variant="body2" sx={{ fontWeight: 400, color: '#4a5568' }}>{item}</Typography></li>
           ))}
@@ -56,14 +56,14 @@ export function BumblebeeCard({
         <Typography variant="h6" color="text.primary" sx={{ marginTop: 3, marginBottom: 1 }}>
           Комплектация шмелиного улья:
         </Typography>
-        <ul className="list-disc pl-5 text-gray-700 space-y-1">
+        <ul className="list-disc pl-5 text-gray-700 space-y-2">
           {kit_contents.map((item, index) => (
             <li key={index}><Typography variant="body2" sx={{ fontWeight: 400, color: '#4a5568' }}>{item}</Typography></li>
           ))}
         </ul>
       </CardContent>
       <Box sx={{ padding: 2.5, paddingTop: 0 }}>
-        <NextLink href="/contact-us" passHref legacyBehavior>
+        <NextLink href="/contact-us" passHref>
           <Button component="a" variant="contained" fullWidth>Запросить</Button>
         </NextLink>
       </Box>

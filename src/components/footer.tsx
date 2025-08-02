@@ -25,10 +25,10 @@ export function Footer() {
               Контакты
             </Typography>
             <Typography sx={{ color: 'white', marginBottom: 2, fontWeight: 400 }}>
-              Телефон: +7 (XXX) XXX-XX-XX
+              Телефон: +7 (928) 528-85-98
             </Typography>
             <Typography sx={{ color: 'white', marginBottom: 12, fontWeight: 400 }}>
-              Email: info@bumblebeefarm.ru
+              Email: info@shmeleferma.com
             </Typography>
           </div>
         </div>
@@ -40,16 +40,16 @@ export function Footer() {
           </Typography>
 
           <div className="flex gap-2">
-            <a href="https://t.me/yourtelegram" target="_blank">
+            <a href="https://t.me/ShmelinayaFerma" target="_blank">
               <IconButton sx={{ color: 'white' }}>
                 <i className="fa-brands fa-telegram text-2xl not-italic opacity-75"></i>
               </IconButton>
             </a>
-            <a href="https://instagram.com/yourinstagram" target="_blank">
+            {/* <a href="https://instagram.com/yourinstagram" target="_blank">
               <IconButton sx={{ color: 'white' }}>
                 <i className="fa-brands fa-instagram text-2xl not-italic opacity-75"></i>
               </IconButton>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

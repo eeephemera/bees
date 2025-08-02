@@ -14,10 +14,30 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind App Presentation Page",
-
+  title: "Шмелиные колонии для опыления теплиц и сельскохозяйственных культур",
   description:
-    "We are thrilled to offer you a Free App Presentation Template, a beautifully designed and user-friendly Tailwind CSS and Material Tailwind theme crafted specifically for app developers like you. The free app presentation template includes key features such as hero, features, FAQ, stats, and testimonial sections."
+    "Предлагаем высококачественные шмелиные колонии для эффективного опыления теплиц, садов и сельскохозяйственных культур. Узнайте о преимуществах биологического опыления, увеличении урожайности и устойчивом развитии с нашими шмелями.",
+  keywords: "шмели, шмелиные колонии, опыление, теплицы, сельскохозяйственные культуры, биологическое опыление, опылители, увеличение урожайности, пчеловодство для теплиц",
+  openGraph: {
+    title: "Шмелиные колонии для опыления теплиц и сельскохозяйственных культур",
+    description:
+      "Предлагаем высококачественные шмелиные колонии для эффективного опыления теплиц, садов и сельскохозяйственных культур. Узнайте о преимуществах биологического опыщения, увеличении урожайности и устойчивом развитии с нашими шмелями.",
+    url: "https://bees-lemon.vercel.app/og-image.jpg", // Replace with your actual Open Graph image URL
+    siteName: "Пчелы",
+    images: [
+      {
+        url: "https://bees-lemon.vercel.app/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Шмелиные колонии - Опыление теплиц",
+      },
+    ],
+    locale: "ru_RU",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://bees-lemon.vercel.app", // Replace with your actual website URL
+  },
 };
 
 export default function RootLayout({
@@ -36,6 +56,29 @@ export default function RootLayout({
           referrerPolicy="no-referrer"
         />
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Шмелиная Ферма",
+              "url": "https://bees-lemon.vercel.app/",
+              "logo": "https://bees-lemon.vercel.app/favicon.png", // Consider adding a more appropriate logo URL
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+7 (928) 528-85-98", // Replace with your actual phone number
+                "contactType": "customer service",
+                "email": "shmel-info-farm@ya.ru"
+              },
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Москва", // Replace with actual city
+                "addressCountry": "RU" // Replace with actual country (e.g., RU)
+              }
+            }),
+          }}
+        />
       </head>
       <body className={roboto.className}>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>

@@ -64,16 +64,21 @@ export function Navbar({ alwaysOpaque = false }: { alwaysOpaque?: boolean }) {
             <NavItem href="/catalog">Каталог Шмелей</NavItem>
           </ul>
           <Box sx={{ display: "flex", gap: 1 }}>
-            <NextLink href="https://t.me/yourtelegram" passHref legacyBehavior>
+            <NextLink href="https://t.me/ShmelinayaFerma" passHref legacyBehavior>
               <IconButton component="a" target="_blank" rel="noopener noreferrer" sx={{ color: iconColor }}>
                 <i className="fa-brands fa-telegram text-base" />
               </IconButton>
             </NextLink>
-            <NextLink href="https://instagram.com/yourinstagram" passHref legacyBehavior>
+            {/* <NextLink href="https://instagram.com/yourinstagram" passHref legacyBehavior>
               <IconButton component="a" target="_blank" rel="noopener noreferrer" sx={{ color: iconColor }}>
                 <i className="fa-brands fa-instagram text-base" />
               </IconButton>
-            </NextLink>
+            </NextLink> */}
+            {/* <NextLink href="https://github.com/creativetimofficial" passHref legacyBehavior>
+              <IconButton component="a" target="_blank" rel="noopener noreferrer" sx={{ color: iconColor }}>
+                <i className="fa-brands fa-github text-base" />
+              </IconButton>
+            </NextLink> */}
           </Box>
         </Box>
 
@@ -97,16 +102,21 @@ export function Navbar({ alwaysOpaque = false }: { alwaysOpaque?: boolean }) {
             <NavItem href="/catalog">Каталог Шмелей</NavItem>
           </ul>
           <Box sx={{ marginTop: 2, display: "flex", alignItems: "center", gap: 1 }}>
-            <NextLink href="https://t.me/yourtelegram" passHref legacyBehavior>
+            <NextLink href="https://t.me/ShmelinayaFerma" passHref legacyBehavior>
               <IconButton component="a" target="_blank" rel="noopener noreferrer" sx={{ color: "#424242" }}>
                 <i className="fa-brands fa-telegram text-base" />
               </IconButton>
             </NextLink>
-            <NextLink href="https://instagram.com/yourinstagram" passHref legacyBehavior>
+            {/* <NextLink href="https://instagram.com/yourinstagram" passHref legacyBehavior>
               <IconButton component="a" target="_blank" rel="noopener noreferrer" sx={{ color: "#424242" }}>
                 <i className="fa-brands fa-instagram text-base" />
               </IconButton>
-            </NextLink>
+            </NextLink> */}
+            {/* <NextLink href="https://github.com/creativetimofficial" passHref legacyBehavior>
+              <IconButton component="a" target="_blank" rel="noopener noreferrer" sx={{ color: "#424242" }}>
+                <i className="fa-brands fa-github text-base" />
+              </IconButton>
+            </NextLink> */}
           </Box>
         </Box>
       </Collapse>
