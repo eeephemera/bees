@@ -28,7 +28,7 @@ export function Footer() {
               Телефон: +7 (928) 528-85-98
             </Typography>
             <Typography sx={{ color: 'white', marginBottom: 12, fontWeight: 400 }}>
-              Email: info@shmeleferma.com
+              Email: shmel-info-farm@ya.ru
             </Typography>
           </div>
         </div>
